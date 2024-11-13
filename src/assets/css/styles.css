@@ -1,0 +1,199 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global styles */
+body {
+    font-family: open sans, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Center-align all text */
+} 
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* CSS Flexbox */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+    display: none;
+}
+
+/* Style the mobile menu icon */
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+  /* Hero section styles */
+  .hero {
+    background-color: #fff;
+    background-image: url('/images/tree1.jpg');
+    background-size: cover;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #13c84c;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Stats section styles */
+  .stats {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  
+  .stats-cards {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stats-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav ul {
+      margin-top: 20px;
+    }
+  
+    .nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+/* Display mobile menu icon and hide main menu on small screens */
+@media screen and (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+    
+    .mobile-menu.active {
+        display: block; /* Show the mobile menu when active */
+    }
+}
+
+.panoramic img {
+  width: 100%;
+  height: auto;
+}
+
+.panoramic img {
+  width: 100%;
+  height: auto;
+}
